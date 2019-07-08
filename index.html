@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Platos Coffee</title>
+	  
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+	  
+	  <!-- Font Aw -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	  
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	  
+	  <!-- CSS Style Sheet -->
+	  <link rel="stylesheet" href="css/mainStyles.css">
+	  
+	  <!-- JavaScript -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+   
+    if (this.hash !== "") {
+   
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+ 
+	  <style>
+		  
+		 body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.hero-image {
+  
+    background: linear-gradient( rgba(0, 0, 0, 1.45), rgba(0, 0, 0, .5) ), url('images/hero.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	background-blend-mode: darken;
+	
+}
+
+		
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: 1px solid white;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+	width: 200px;
+	
+}
+
+.hero-text button:hover {
+  background-color: transparent;
+  color: white;
+}
+		  
+		  .hero-pad1{
+			  padding-top: 50%;
+		  }
+		  
+		  .padTop{
+			  padding-top: 5%;
+			  padding-bottom: 5%;
+		  }
+		  
+		   .padBottom{
+			  padding-bottom: 5%;
+		  }
+		  
+		  .hero-text a {
+			  text-decoration: none;
+			  color: white;
+		  }
+		  
+		 .hero-text a:hover {
+			  text-decoration: none;
+			  color: white;
+		  }
+		  
+		  a:hover{
+			  text-decoration: none;
+			  color: white;
+		  }
+		  
+		  a{
+			  text-decoration: none;
+			  color: white;
+		  }
+		  
+		  .cater{
+			  background:#FF2A2D;
+		  }
+		  
+		  .foot{
+			  
+			 
+			  margin-bottom: 0;
+		  }
+		  
+		
+		  
+		 
+		
+		  
+	  </style>
+
+  </head>
+  <body>
+<div class="hero-image">
+  
+<div class="hero-text">
+	<img src="images/logowhite.png">
+   <div class="hero-pad1">
+	 <!-- Button to Open the Modal -->
+  <button type="button" class="btn-hero text-white" data-toggle="modal" data-target="#about">
+    About
+  </button>
+	<!-- Button to Open the Modal -->
+  <button type="button" class=" btn btn-hero text-white" data-toggle="modal" data-target="#contact">
+    Contact
+  </button>
+	   <br>
+	   <br>
+	   <br>
+	   <br>
+<div class="view">
+	<a href="#menu">View Menu <i class="fas fa-chevron-down"></i></a>
+	</div>
+	</div>
+	
+	
+   
+</div>
+	
+</div>
+	  
+  <!-- About modal -->
+  <div class="modal fade" id="about">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+      
+        
+   
+        <div class="modal-body">
+            <button type="button" class="close " data-dismiss="modal">&times;</button>
+			
+			<h2 class="padTop padBottom text-center">How it all started?</h2>
+			<p class="text-center padBottom">Pathos Coffee Shop was founded in 1982 in Pensacola, Florida. This unique coffee shop stimulates all the senses with its powerful ambiance and dedicated focus on quality and personalized service!
+			In order to bring out the best beverage characteristics, we specialize in hand-crafted roasting in small batches. Each roast is created to match the type, origin and blend of the green coffee heightening the aroma and flavor. Roasting daily, we consistently bring complexity to each cup of coffee tamping towards excellence in each and every shot of espresso!
+			We are working toward their USDA Organic Certification by CCOF, as well as establishing a strong relationship with Cooperative Coffees. We purchase a large selection of Shade Grown, Organic, and Fair Trade Certified Coffees that affirm Social and Enviromental Responsibility.
+			Additionally, through our specialty coffee we support our military and many
+world wide mission opportunities. We’re waiting to hear from you!</p>
+			
+
+
+
+        </div>
+       
+        
+      </div>
+    </div>
+  </div>
+	  
+	  <!-- Contact Modal -->
+  <div class="modal fade" id="contact">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+      
+        <div class="modal-body ">
+			 <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Have a question?</h4>
+			<br>
+			<p class="text-center">Swing by for a cup of coffee or fill out this form.</p>
+			
+			<!-- Form -->
+			<form accept-charset="UTF-8" action="https://usebasin.com/f/344e7906094c
+" enctype="multipart/form-data" method="POST">
+				<!-- Name -->
+				<div class="form-group">
+     
+      <input type="name" class="form-control" id="name" placeholder="Name" name="name" required>
+    </div>
+				<!-- Email-->
+    <div class="form-group">
+     
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+				
+				<div class="form-group">
+					
+				<textarea class="form-control" id="subject" name="subject" placeholder="What's on your mind?" style="height:200px"></textarea>
+				</div>
+   
+   <div class="text-center">
+				<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+    
+  </form>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+	  
+	  <section id="menu">
+	  <div class="container padBottom">
+		  <h1 class="text-center padTop">Coffee Shop Menu</h1>
+		  <p class="text-center">Fresh Hot Coffee served all the time</p>
+		  
+		  <div class="row padTop">
+		  <div class="col">
+			  <h3>Drinks</h3>
+		  <br>
+		  <h5>Fresh Roasted Coffee</h5>
+		  <p>Available in 12 oz. 16 oz. and 20 oz. sizes</p>
+		  <ul>
+		  <li>Cup O’ Coffee</li>
+		  <li>Café Au Lait</li>
+		  </ul>
+			  </div>
+		  <div class="col">
+			  <img src="images/coffee1.png" height="350px" width="500px">
+			  </div>
+		  </div>
+		  
+		  <div class="row padTop">
+		  <div class="col">
+			  <img src="images/coffee2.jpg" height="350px" width="500px">
+			  </div>
+		  <div class="col">
+		  <h5>Espresso Drinks</h5>
+		  <p>Available in 12 oz. 16 oz. and 20 oz. sizes</p>
+		  <ul>
+			 <li>Espresso – Available as single or double shot</li>
+		  <li>Americano (Espresso and hot water)</li>
+		  <li>Cappuccino (Equal parts of espresso, steamed milk, and foam)</li>
+		  <li>Cafe Latte (Espresso, steamed milk, and just a little foam)</li>
+		  <li>Vanila Latte (Cafe latte with vanilla)</li>
+		  <li>Cafe Mocha (Espresso, steamed milk, chocolate, topped with whipped cream)</li>
+		  <li>White chocolate Mocha (Espresso, steamed milk, white chocolate, topped with whipped cream)</li>
+		  <li>Caramel Macchiato (Layered drink with vanilla, steamed milk, espresso, foam, and caramel on top)</li> 
+			  </ul>
+		  
+		 </div>
+		  </div>
+		  
+		  <div class="row padTop">
+		  <div class="col">
+			  <h5>Coffee-To-Go</h5>
+<p>All of our coffee-to-go comes with a supply of our 12-oz cups, half ‘n’ half, sugar & sugar alternatives, and stirrers as requested by the customer.</p>
+		  
+		  <ul>
+		  <li>Box of Coffee (96 oz of freshly brewed coffee in a disposable box)</li>
+		  <li>Urn of Coffee (192 oz of freshly brewed coffee in an elegant urn that must be returned; easy-to-dispense; highest quality temperature delivery)</li>
+		  </ul>
+
+			  </div>
+		  <div class="col">
+			  <img src="images/coffee3.jpg" height="350px" width="500px">
+			  </div>
+		  </div>
+		 
+		  <div class="row padTop">
+		  <div class="col">
+			  <img src="images/smoothie.jpg" height="350px" width="500px">
+			  </div>
+		  <div class="col">
+			  <h5>Real Fruit Smoothies</h5>
+		  <p>Available in 16 oz. only. No added sugar, No added corn syrup!</p>
+		<ul>
+		  <li>Four Berry</li>
+		  <li>Mango</li>
+		  <li>Peach</li>
+		  <li>Pineapple Paradise</li>
+		  <li>Strawberry</li>
+		  <li>Strawberry Banana</li>
+		  </ul>
+			  </div>
+		  </div>
+		 
+		  <div class="row padTop">
+		  <div class="col">
+			  <h3>Food</h3>
+		  <ul>
+		  <li>Sandwiches and Salads</li>
+		  <li>Ham & Swiss Croissant</li>
+		  <li>Turkey & Swiss Croissant with Cranberry Relish</li>
+		  <li>Pecan Chicken Salad</li>
+		  <li>Greek Salad</li>
+		  <li>Yogurt & Fresh Fruit</li>
+		  </ul>
+
+			  </div>
+		  <div class="col">
+			  <img src="images/sandwhich.jpg" height="350px" width="500px">
+			  </div>
+		  </div>
+		
+		  <div class="row padTop">
+		  <div class="col">
+			  <img src="images/bskrf goods.jpg" height="350px" width="500px">
+			  </div>
+		  <div class="col">
+			  <h5>Assorted Gourmet Baked Goods</h5>
+		  <ul>
+		  <li>Bagels: Plain, Cinnamon Raisin, Everything</li>
+		  <li>Bard’s Best Chocolate Cake</li>
+		  <li>Blackberry Peach Torte</li>
+		  <li>Bran Muffins – (Healthy! No fat! No Sugar! No Oil!)</li>
+		  <li>Bread Pudding with Amaretto or Lemon Sauce</li>
+		  <li>Caramel Apple Pecan Coffeecake</li>
+		  <li>Carrot Coffeecake </li>
+		  <li>Chocolate Chip Crumb Cake</li>
+		  <li>Chocolate Cheesecake Bar</li>
+		  <li>Cinnamon Pear Walnut Coffeecake</li>
+		  <li>Cinnamon-Streusel Coffeecake</li>
+		  <li>Coconut Cream Cake</li>
+		  <li>Coconut Macaroons</li>
+		  <li>Cookies: Chocolate Chip, M&M, Turtle, White Macadamia Nut, Oatmeal Raisen</li>
+		  <li>Crunchy Layered Brownie</li>
+		  <li>Rocky Road Brownies</li>
+		  <li>Scones (Blueberry, White Chocolate Raspberry, & Apple Cinnamon)</li>
+			  <li>1001 Chocolate Chip Cake</li>
+		  </ul>
+			  </div>
+		  </div>
+		
+
+		
+		
+		  </div>
+		  <div class="text-center text-white padTop cater">
+		  
+		  <h2 class="text-center">Having an Event?</h2>
+		  <p class="text-center">We cater.</p>
+		  <br>
+		  <p>Gourmet Baked Goods Trays Available for Your Office, or Special Event!</p>
+		  <p>Need a weeks notice. Email us  <a href="mailto:platoscoffeeshop@gmail.com"><strong>here</strong></a>. </p>
+		  <ul>
+		  
+		  <p>Small Platter serves 6 – 8 people ~ $16.29</p>
+		  <p>Large Platter serves 12 – 16 people ~ $28.79</p>
+		  </ul>
+		  </div>
+		
+
+		  
+	  
+	  </section>
+	  
+	  <footer class="foot">
+		  <div class="container text-center">
+		  <h4 class="padTop text-center"><strong>Platos Coffee Shop</strong></h4>
+		  <p>Main Location: 5555 Right Lane, Pensacola, FL 32503</p>
+	  <p>Open Hours:</p>
+	  <p>Sunday, 8am – 2pm </p>
+	  <p>Monday – Friday, 6am – 9pm </p>
+	  <p>Saturday, 7am – 9pm</p>
+		  
+			  <p>Copyright &copy;</p>
+		  </div>
+	  
+	  </footer>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>
